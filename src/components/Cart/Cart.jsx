@@ -25,7 +25,7 @@ export const Cart = () => {
 
     return (
         <section className='p-4 flex flex-col gap-4 min-h-[90vh]'>
-            <h1 >My cart</h1>
+            <h1 className="text-2xl text-center font-bold underline decoration-orange-500 underline-offset-4 mb-4"><span className="text-orange-500">My</span> cart</h1>
             <div className='mx-auto flex flex-col gap-2'>
                 {cart.map(p => <CartItem key={p.id} {...p} />)}
             </div>
